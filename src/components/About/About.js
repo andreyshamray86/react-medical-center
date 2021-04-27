@@ -1,9 +1,17 @@
 import React from 'react'
+import {Container, Row, Col} from 'react-bootstrap'
+import JumbotronComponent from '../UI/Jumbotron/JumbotronComponent'
 
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
+            <Container>
+                <Row className='mt-4'>
+                    <Col>
+                        <JumbotronComponent/>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }

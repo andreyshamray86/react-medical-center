@@ -9,6 +9,7 @@ import About from './components/About/About'
 import DoctorsList from './components/DoctorsList/DoctorsList'
 import ServicesAndPrices from './components/ServicesAndPrices/ServicesAndPrices'
 import Contacts from './components/Contacts/Contacts'
+import Footer from './components/UI/Footer/Footer'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
               <Navbar/>
             </Col>
           </Row>
-          <Row>
+        </Container>
+          <Row className='mt-4'>
             <Col>
               <Switch>
                 <Route path="/" exact component={Main}/>
@@ -32,7 +34,7 @@ function App() {
               </Switch>
             </Col>
           </Row>
-        </Container>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
